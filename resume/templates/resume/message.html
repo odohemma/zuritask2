@@ -1,0 +1,13 @@
+{% extends "resume/layout.html" %}
+
+{% block body %}
+
+ <h1>Leave a Message:</h1>
+ <form action="{% url 'resume:message' %}" method="post">
+ {% csrf_token %}
+ {{ form }}
+ <input type="submit">
+ </form>
+ <a href="{% url 'resume:index' %}">Home</a>
+ 
+{% endblock %}

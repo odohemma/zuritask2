@@ -1,0 +1,50 @@
+{% extends "resume/layout.html" %}
+
+{% block body %}
+
+    <div class="container">
+        <img src="https://terraspatio.com/HNG-Internship-brand-logo.png" alt="HNG Internship brand-logo">
+    </div>
+    <h1>Emmanuel Odoh's CV</h1>
+    <hr>
+    <p>
+        <b>Name</b><br>
+        Emmanuel Odoh
+    </p>
+    <p>
+        <b>Phone</b><br>
+        08094640212
+    </p>
+    <p>
+        <b>Email</b><br>
+        odohemma@gmail.com
+    </p>
+    <p>
+        <b>Educational Qualification</b><br>
+        2009 | B. Sc. in Geoinformatics and Surveying (Second Class, Upper Division) | University of Nigeria, Nsukka. <br>
+        2020 | PGD in Geographic Information Systems | University of Leeds, United Kingdom. <br>
+        2021 - Date | M. Sc. in Geographic Information Systems | University of Leeds, United Kingdom.
+    </p>
+    <p>
+        <b>Professional Qualification</b><br>
+        2014 | Registered Surveyor | Surveyors Council of Nigeria (SURCON) 
+    </p>   
+    <p>
+        <b>Work Experience</b><br>
+        2017-Date | Principal Partner | Terraspatio Consults Ltd. 
+    </p> 
+    <p>
+        <b>Computer and Technical Skills</b><br>
+        Working knowledge of various Microsoft Office products (Word, Excel, PowerPoint, Access etc.). <br>
+        Working knowledge of a variety of CAD software. <br>
+        Working knowledge of ArcGIS, QGIS and ERDAS IMAGINE. <br>
+        Working knowledge of PHP, Flask, PostgreSQL/PostGIS, Python programming language, and Spyder IDE. <br>
+        Working knowledge of Web-GIS, HTML, CSS, and JavaScript. <br>
+        Working knowledge of Amazon Web Services (S3, Route 53, CloudFront) and Heroku. <br>
+        Working knowledge of a variety of modern survey, and GIS equipment. <br>
+    </p>
+    <hr>
+
+ <a href="{% url 'resume:message' %}">Leave a Message</a>
+ 
+{% endblock %}
